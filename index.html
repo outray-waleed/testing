@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Pizzalelo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.449);
+            color: white;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .logo {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 36px;
+        }
+
+        .nav_link {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .nav_link:hover {
+            background-color: black;
+        }
+
+        .hero {
+            background-image: url('img/pizza_dark.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 200px 50px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .para {
+            max-width: 600px;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 5px 30px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 0px 100px;
+        }
+
+        .container_title {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        .services {
+            display: flex;
+            gap: 50px;
+        }
+
+        .service {
+            width: 100%;
+            height: 300px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+        .service_image img {
+            height: 100px;
+        }
+
+        .service_title {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .service_desc {
+            text-align: center;
+        }
+
+        .clients {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .client img {
+            height: 100px;
+            filter: saturate(0);
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact_form {
+            width: 400px;
+        }
+
+        .form_group {
+            margin-bottom: 20px;
+        }
+
+        .form_group label {
+            font-size: 20px;
+            display: block;
+        }
+
+        .form_group input {
+            box-sizing: border-box;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        .form_submit {
+            text-align: center;
+        }
+
+        .form_submit button {
+            padding: 5px 30px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            font-size: 24px;
+        }
+
+        .footer {
+            margin-top: 100px;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .navbar{
+                flex-direction: column;
+            }
+
+            .nav_link{
+                margin-left: 0px;
+            }
+
+            .nav_links{
+                margin-top: 10px;
+            }
+
+            .heading{
+                text-align: center;
+            }
+
+            .container{
+                padding: 0px 20px;
+
+            }
+
+            .hero{
+                padding: 200px 20px;
+            }
+
+            .services{
+                flex-direction: column;
+            }
+
+            .service{
+                width: auto;
+            }
+
+            .clients{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/pizzalogo.png" style="height:100%" alt="">
+            Pizzalelo
+        </div>
+        <div class="nav_links">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#" class="nav_link">Contact</a>
+            <a href="#" class="nav_link">About</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="heading">Welcome to Pizzalelo</div>
+        <div class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptas facere nostrum
+            pariatur architecto veniam porro fugiat at excepturi perspiciatis delectus mollitia, ipsam dolorum commodi
+            ab quam unde consectetur ipsum?</div>
+        <button class="btn">Order now!</button>
+    </div>
+    <div class="container">
+        <div class="container_title">Our Services</div>
+        <div class="services">
+            <div class="service">
+                <div class="service_image"><img src="img/pizzalogo.png" alt="" /></div>
+                <div class="service_title">Take Away</div>
+                <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, pariatur.
+                    Nostrum, molestias. Facere error possimus accusamus culpa expedita ullam corrupti.</div>
+            </div>
+            <div class="service">
+                <div class="service_image"><img src="img/bulk.png" alt="" /></div>
+                <div class="service_title">Dine In</div>
+                <div class="service_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, alias dolor.
+                    Dolor, ullam quisquam accusantium explicabo exercitationem suscipit doloribus dolores.</div>
+            </div>
+            <div class="service">
+                <div class="service_image"><img src="img/bikepng.png" alt="" /></div>
+                <div class="service_title">Delivery</div>
+                <div class="service_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat ad
+                    ratione libero adipisci accusantium impedit mollitia, esse non consectetur!</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_title">Our Clients</div>
+        <div class="clients">
+            <div class="client"><img src="img/logo1png.png" alt="" /></div>
+            <div class="client"><img src="img/logo2.png" alt="" /></div>
+            <div class="client"><img src="img/logo3.png" alt="" /></div>
+            <div class="client"><img src="img/logo4.png" alt="" /></div>
+            <div class="client"><img src="img/logo5.png" alt="" /></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_title">Contact Us!</div>
+        <div class="contact">
+
+            <form class="contact_form">
+                <div class="form_group">
+                    <label for="">Name</label>
+                    <input type="text">
+                </div>
+                <div class="form_group">
+                    <label for="">Email</label>
+                    <input type="text">
+                </div>
+                <div class="form_group">
+                    <label for="">Contact</label>
+                    <input type="text">
+                </div>
+                <div class="form_group">
+                    <label for="">Message</label>
+                    <input type="text">
+                </div>
+                <div class="form_submit">
+                    <button type="button">Submit!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright @ Pizzalelo - 2022
+    </div>
+</body>
+
+</html>
